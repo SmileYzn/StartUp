@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace StartUp.Properties
-{
-
-
+namespace StartUp.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,49 +22,649 @@ namespace StartUp.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("StartUp.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add {
+            get {
+                object obj = ResourceManager.GetObject("add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap del {
+            get {
+                object obj = ResourceManager.GetObject("del", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap del_all {
+            get {
+                object obj = ResourceManager.GetObject("del_all", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit {
+            get {
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hide {
+            get {
+                object obj = ResourceManager.GetObject("hide", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://perfectzone.com.br/.
+        /// </summary>
+        internal static string Msg_AboutLink {
+            get {
+                return ResourceManager.GetString("Msg_AboutLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add.
+        /// </summary>
+        internal static string Msg_Add {
+            get {
+                return ResourceManager.GetString("Msg_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Applications.
+        /// </summary>
+        internal static string Msg_Applications {
+            get {
+                return ResourceManager.GetString("Msg_Applications", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  applications running..
+        /// </summary>
+        internal static string Msg_ApplicationsRunning {
+            get {
+                return ResourceManager.GetString("Msg_ApplicationsRunning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Time.
+        /// </summary>
+        internal static string Msg_CheckTime {
+            get {
+                return ResourceManager.GetString("Msg_CheckTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove all applications from StartUp?.
+        /// </summary>
+        internal static string Msg_ClearGridConfirm {
+            get {
+                return ResourceManager.GetString("Msg_ClearGridConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to remove aplications, make sure StartUp is not running..
+        /// </summary>
+        internal static string Msg_ClearGridError {
+            get {
+                return ResourceManager.GetString("Msg_ClearGridError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop alll running applications before exit.
+        /// </summary>
+        internal static string Msg_CloseExit {
+            get {
+                return ResourceManager.GetString("Msg_CloseExit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        internal static string Msg_Error {
+            get {
+                return ResourceManager.GetString("Msg_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Executable Files (*.exe)|*.exe.
+        /// </summary>
+        internal static string Msg_Executable_Files {
+            get {
+                return ResourceManager.GetString("Msg_Executable_Files", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit.
+        /// </summary>
+        internal static string Msg_Exit {
+            get {
+                return ResourceManager.GetString("Msg_Exit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to save XML file.
+        /// </summary>
+        internal static string Msg_FailSaveXML {
+            get {
+                return ResourceManager.GetString("Msg_FailSaveXML", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File.
+        /// </summary>
+        internal static string Msg_File {
+            get {
+                return ResourceManager.GetString("Msg_File", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartUp.xml.
+        /// </summary>
+        internal static string Msg_FileName {
+            get {
+                return ResourceManager.GetString("Msg_FileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MU Server Start Up.
+        /// </summary>
+        internal static string Msg_FormMain {
+            get {
+                return ResourceManager.GetString("Msg_FormMain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartUp is hidding all applications, wait..
+        /// </summary>
+        internal static string Msg_HiddingAll {
+            get {
+                return ResourceManager.GetString("Msg_HiddingAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hide All.
+        /// </summary>
+        internal static string Msg_HideAll {
+            get {
+                return ResourceManager.GetString("Msg_HideAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information.
+        /// </summary>
+        internal static string Msg_Information {
+            get {
+                return ResourceManager.GetString("Msg_Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Input a valid value, or press ESC to cancel.
+        /// </summary>
+        internal static string Msg_InvalidDelay {
+            get {
+                return ResourceManager.GetString("Msg_InvalidDelay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Input a valid path, or press ESCto cancel.
+        /// </summary>
+        internal static string Msg_InvalidPath {
+            get {
+                return ResourceManager.GetString("Msg_InvalidPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The XML is invalid or corrupt, application will create a new file.
+        /// </summary>
+        internal static string Msg_InvalidXML {
+            get {
+                return ResourceManager.GetString("Msg_InvalidXML", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  Already Running!.
+        /// </summary>
+        internal static string Msg_IsRunning {
+            get {
+                return ResourceManager.GetString("Msg_IsRunning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Main Menu.
+        /// </summary>
+        internal static string Msg_MainMenu {
+            get {
+                return ResourceManager.GetString("Msg_MainMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Main Toolbar.
+        /// </summary>
+        internal static string Msg_MainToolbar {
+            get {
+                return ResourceManager.GetString("Msg_MainToolbar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimize.
+        /// </summary>
+        internal static string Msg_Minimize {
+            get {
+                return ResourceManager.GetString("Msg_Minimize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Question.
+        /// </summary>
+        internal static string Msg_Question {
+            get {
+                return ResourceManager.GetString("Msg_Question", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close MU Server Start Up?.
+        /// </summary>
+        internal static string Msg_QuestionClose {
+            get {
+                return ResourceManager.GetString("Msg_QuestionClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove Selected Application?.
+        /// </summary>
+        internal static string Msg_QuestionRemoveApp {
+            get {
+                return ResourceManager.GetString("Msg_QuestionRemoveApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove.
+        /// </summary>
+        internal static string Msg_Remove {
+            get {
+                return ResourceManager.GetString("Msg_Remove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartUp is starting all applications, wait..
+        /// </summary>
+        internal static string Msg_RunningAll {
+            get {
+                return ResourceManager.GetString("Msg_RunningAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 10 Seconds.
+        /// </summary>
+        internal static string Msg_Seconds_10 {
+            get {
+                return ResourceManager.GetString("Msg_Seconds_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 20 Seconds.
+        /// </summary>
+        internal static string Msg_Seconds_20 {
+            get {
+                return ResourceManager.GetString("Msg_Seconds_20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 30 Seconds.
+        /// </summary>
+        internal static string Msg_Seconds_30 {
+            get {
+                return ResourceManager.GetString("Msg_Seconds_30", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 40 Seconds.
+        /// </summary>
+        internal static string Msg_Seconds_40 {
+            get {
+                return ResourceManager.GetString("Msg_Seconds_40", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 50 Seconds.
+        /// </summary>
+        internal static string Msg_Seconds_50 {
+            get {
+                return ResourceManager.GetString("Msg_Seconds_50", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 60 Seconds.
+        /// </summary>
+        internal static string Msg_Seconds_60 {
+            get {
+                return ResourceManager.GetString("Msg_Seconds_60", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string Msg_Settings {
+            get {
+                return ResourceManager.GetString("Msg_Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show All.
+        /// </summary>
+        internal static string Msg_ShowAll {
+            get {
+                return ResourceManager.GetString("Msg_ShowAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Hidden.
+        /// </summary>
+        internal static string Msg_ShowHidden {
+            get {
+                return ResourceManager.GetString("Msg_ShowHidden", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartUp is showing all applications, wait..
+        /// </summary>
+        internal static string Msg_ShowingAll {
+            get {
+                return ResourceManager.GetString("Msg_ShowingAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Normal.
+        /// </summary>
+        internal static string Msg_ShowNormal {
+            get {
+                return ResourceManager.GetString("Msg_ShowNormal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start All.
+        /// </summary>
+        internal static string Msg_StartAll {
+            get {
+                return ResourceManager.GetString("Msg_StartAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartUp Is Not Running.
+        /// </summary>
+        internal static string Msg_StartUpIsNotRunnig {
+            get {
+                return ResourceManager.GetString("Msg_StartUpIsNotRunnig", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartUp Is Running.
+        /// </summary>
+        internal static string Msg_StartUpIsRunning {
+            get {
+                return ResourceManager.GetString("Msg_StartUpIsRunning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartUp Minimized.
+        /// </summary>
+        internal static string Msg_StartUpMinimized {
+            get {
+                return ResourceManager.GetString("Msg_StartUpMinimized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Double click here to show again..
+        /// </summary>
+        internal static string Msg_StartUpMinimizedText {
+            get {
+                return ResourceManager.GetString("Msg_StartUpMinimizedText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add applicatios or press run to start it..
+        /// </summary>
+        internal static string Msg_StatusTipText {
+            get {
+                return ResourceManager.GetString("Msg_StatusTipText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop All.
+        /// </summary>
+        internal static string Msg_StopAll {
+            get {
+                return ResourceManager.GetString("Msg_StopAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StartUp is stopping all applications, wait..
+        /// </summary>
+        internal static string Msg_StoppingAll {
+            get {
+                return ResourceManager.GetString("Msg_StoppingAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop Selected application before remove it.
+        /// </summary>
+        internal static string Msg_StopSelectedApp {
+            get {
+                return ResourceManager.GetString("Msg_StopSelectedApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning.
+        /// </summary>
+        internal static string Msg_Warning {
+            get {
+                return ResourceManager.GetString("Msg_Warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Window Mode.
+        /// </summary>
+        internal static string Msg_WindowMode {
+            get {
+                return ResourceManager.GetString("Msg_WindowMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap off {
+            get {
+                object obj = ResourceManager.GetObject("off", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap on {
+            get {
+                object obj = ResourceManager.GetObject("on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap set {
+            get {
+                object obj = ResourceManager.GetObject("set", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap show {
+            get {
+                object obj = ResourceManager.GetObject("show", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap start {
+            get {
+                object obj = ResourceManager.GetObject("start", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap start_all {
+            get {
+                object obj = ResourceManager.GetObject("start_all", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stop {
+            get {
+                object obj = ResourceManager.GetObject("stop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stop_all {
+            get {
+                object obj = ResourceManager.GetObject("stop_all", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap window {
+            get {
+                object obj = ResourceManager.GetObject("window", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

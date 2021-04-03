@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,208 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="del" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\del.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="del_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\del_all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hide.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Msg_Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Msg_Applications" xml:space="preserve">
+    <value>Applications</value>
+  </data>
+  <data name="Msg_CheckTime" xml:space="preserve">
+    <value>Check Time</value>
+  </data>
+  <data name="Msg_Executable_Files" xml:space="preserve">
+    <value>Executable Files (*.exe)|*.exe</value>
+  </data>
+  <data name="Msg_Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Msg_File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Msg_FormMain" xml:space="preserve">
+    <value>MU Server Start Up</value>
+  </data>
+  <data name="Msg_HideAll" xml:space="preserve">
+    <value>Hide All</value>
+  </data>
+  <data name="Msg_MainMenu" xml:space="preserve">
+    <value>Main Menu</value>
+  </data>
+  <data name="Msg_MainToolbar" xml:space="preserve">
+    <value>Main Toolbar</value>
+  </data>
+  <data name="Msg_Minimize" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="Msg_Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="Msg_QuestionClose" xml:space="preserve">
+    <value>Close MU Server Start Up?</value>
+  </data>
+  <data name="Msg_QuestionRemoveApp" xml:space="preserve">
+    <value>Remove Selected Application?</value>
+  </data>
+  <data name="Msg_Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Msg_Seconds_10" xml:space="preserve">
+    <value>10 Seconds</value>
+  </data>
+  <data name="Msg_Seconds_20" xml:space="preserve">
+    <value>20 Seconds</value>
+  </data>
+  <data name="Msg_Seconds_30" xml:space="preserve">
+    <value>30 Seconds</value>
+  </data>
+  <data name="Msg_Seconds_40" xml:space="preserve">
+    <value>40 Seconds</value>
+  </data>
+  <data name="Msg_Seconds_50" xml:space="preserve">
+    <value>50 Seconds</value>
+  </data>
+  <data name="Msg_Seconds_60" xml:space="preserve">
+    <value>60 Seconds</value>
+  </data>
+  <data name="Msg_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Msg_ShowAll" xml:space="preserve">
+    <value>Show All</value>
+  </data>
+  <data name="Msg_ShowHidden" xml:space="preserve">
+    <value>Show Hidden</value>
+  </data>
+  <data name="Msg_ShowNormal" xml:space="preserve">
+    <value>Show Normal</value>
+  </data>
+  <data name="Msg_StartAll" xml:space="preserve">
+    <value>Start All</value>
+  </data>
+  <data name="Msg_StopAll" xml:space="preserve">
+    <value>Stop All</value>
+  </data>
+  <data name="Msg_WindowMode" xml:space="preserve">
+    <value>Window Mode</value>
+  </data>
+  <data name="off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\on.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="set" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\set.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="show" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\show.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\start.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="start_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\start_all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stop_all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="window" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\window.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Msg_FileName" xml:space="preserve">
+    <value>StartUp.xml</value>
+  </data>
+  <data name="Msg_IsRunning" xml:space="preserve">
+    <value> Already Running!</value>
+  </data>
+  <data name="Msg_InvalidDelay" xml:space="preserve">
+    <value>Input a valid value, or press ESC to cancel</value>
+  </data>
+  <data name="Msg_InvalidPath" xml:space="preserve">
+    <value>Input a valid path, or press ESCto cancel</value>
+  </data>
+  <data name="Msg_FailSaveXML" xml:space="preserve">
+    <value>Failed to save XML file</value>
+  </data>
+  <data name="Msg_InvalidXML" xml:space="preserve">
+    <value>The XML is invalid or corrupt, application will create a new file</value>
+  </data>
+  <data name="Msg_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Msg_CloseExit" xml:space="preserve">
+    <value>Stop alll running applications before exit</value>
+  </data>
+  <data name="Msg_AboutLink" xml:space="preserve">
+    <value>https://perfectzone.com.br/</value>
+  </data>
+  <data name="Msg_ApplicationsRunning" xml:space="preserve">
+    <value> applications running.</value>
+  </data>
+  <data name="Msg_ClearGridConfirm" xml:space="preserve">
+    <value>Remove all applications from StartUp?</value>
+  </data>
+  <data name="Msg_ClearGridError" xml:space="preserve">
+    <value>Failed to remove aplications, make sure StartUp is not running.</value>
+  </data>
+  <data name="Msg_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Msg_StartUpIsNotRunnig" xml:space="preserve">
+    <value>StartUp Is Not Running</value>
+  </data>
+  <data name="Msg_StartUpIsRunning" xml:space="preserve">
+    <value>StartUp Is Running</value>
+  </data>
+  <data name="Msg_StatusTipText" xml:space="preserve">
+    <value>Add applicatios or press run to start it.</value>
+  </data>
+  <data name="Msg_StopSelectedApp" xml:space="preserve">
+    <value>Stop Selected application before remove it</value>
+  </data>
+  <data name="Msg_StartUpMinimized" xml:space="preserve">
+    <value>StartUp Minimized</value>
+  </data>
+  <data name="Msg_StartUpMinimizedText" xml:space="preserve">
+    <value>Double click here to show again.</value>
+  </data>
+  <data name="Msg_HiddingAll" xml:space="preserve">
+    <value>StartUp is hidding all applications, wait.</value>
+  </data>
+  <data name="Msg_Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Msg_RunningAll" xml:space="preserve">
+    <value>StartUp is starting all applications, wait.</value>
+  </data>
+  <data name="Msg_ShowingAll" xml:space="preserve">
+    <value>StartUp is showing all applications, wait.</value>
+  </data>
+  <data name="Msg_StoppingAll" xml:space="preserve">
+    <value>StartUp is stopping all applications, wait.</value>
+  </data>
 </root>
