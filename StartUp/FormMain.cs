@@ -434,13 +434,13 @@ namespace StartUp
                             Process process = new Process();
 
                             // Set path
-                            process.StartInfo.FileName = FileName;
+                            process.StartInfo.FileName = Path.GetFullPath(FileName);
 
                             // Set arguments
                             process.StartInfo.Arguments = Arguments;
 
                             // Set working directory
-                            process.StartInfo.WorkingDirectory = Path.GetDirectoryName(FileName);
+                            process.StartInfo.WorkingDirectory = Path.GetDirectoryName(Path.GetFullPath(FileName));
 
                             // Set window style to normal before use ShowWindow function after open
                             process.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
@@ -590,8 +590,8 @@ namespace StartUp
             toolStripSeparatorDelAll.Visible = (hasRows && (RunningCount == 0));
             deleteAllToolStripMenuItem.Visible = (hasRows && (RunningCount == 0));
 
-            // Hide separator of trash all
-            toolStripSeparatorDellAll.Visible = (hasRows && (RunningCount == 0));
+            // Show/Hide separator of trash all
+            toolStripSeparatorShowHideAll.Visible = (RunningCount != 0);
             toolStripButtonDelAll.Visible = (hasRows && (RunningCount == 0));
 
             // Update status
@@ -785,13 +785,13 @@ namespace StartUp
                             Process process = new Process();
 
                             // Set path
-                            process.StartInfo.FileName = FileName;
+                            process.StartInfo.FileName = Path.GetFullPath(FileName);
 
                             // Set arguments
                             process.StartInfo.Arguments = Arguments;
 
                             // Set working directory
-                            process.StartInfo.WorkingDirectory = Path.GetDirectoryName(FileName);
+                            process.StartInfo.WorkingDirectory = Path.GetDirectoryName(Path.GetFullPath(FileName));
 
                             // Set window style to normal before use ShowWindow function after open
                             process.StartInfo.WindowStyle = ProcessWindowStyle.Normal;
