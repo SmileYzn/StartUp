@@ -69,7 +69,7 @@
             this.toolStripSeparatorStartStopAll = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonShowAll = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonHideAll = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparatorDellAll = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparatorShowHideAll = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonDelAll = new System.Windows.Forms.ToolStripButton();
             this.dataGridViewMain = new System.Windows.Forms.DataGridView();
             this.ColumnIndex = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -349,7 +349,7 @@
             this.toolStripSeparatorStartStopAll,
             this.toolStripButtonShowAll,
             this.toolStripButtonHideAll,
-            this.toolStripSeparatorDellAll,
+            this.toolStripSeparatorShowHideAll,
             this.toolStripButtonDelAll});
             this.toolStripMain.Location = new System.Drawing.Point(0, 24);
             this.toolStripMain.Name = "toolStripMain";
@@ -440,11 +440,11 @@
             this.toolStripButtonHideAll.Visible = false;
             this.toolStripButtonHideAll.Click += new System.EventHandler(this.hideAllToolStripMenuItem_Click);
             // 
-            // toolStripSeparatorDellAll
+            // toolStripSeparatorShowHideAll
             // 
-            this.toolStripSeparatorDellAll.Name = "toolStripSeparatorDellAll";
-            this.toolStripSeparatorDellAll.Size = new System.Drawing.Size(6, 25);
-            this.toolStripSeparatorDellAll.Visible = false;
+            this.toolStripSeparatorShowHideAll.Name = "toolStripSeparatorShowHideAll";
+            this.toolStripSeparatorShowHideAll.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparatorShowHideAll.Visible = false;
             // 
             // toolStripButtonDelAll
             // 
@@ -862,7 +862,7 @@
         private System.Windows.Forms.Timer timerCheck;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelRunningCount;
         private System.Windows.Forms.ToolStripMenuItem perfectZonecombrToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparatorDellAll;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparatorShowHideAll;
         private System.Windows.Forms.ToolStripButton toolStripButtonDelAll;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparatorDelAll;
         private System.Windows.Forms.ToolStripMenuItem deleteAllToolStripMenuItem;
